@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <Button
+        android:id="@+id/itemsButton"
+        android:background="#10ffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="这是一个弹框测试"
+        android:gravity="left"
+        android:paddingBottom="2dip"
+        android:paddingLeft="10dip"
+        android:textColor="@color/gray"
+        android:textSize="15dip" />
+
+</RelativeLayout>

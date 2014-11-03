@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_frame"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/wb"
+    android:gravity="top"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="org.saber.qkh.MainActivity$PlaceholderFragment" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/section_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/up_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:text=""
+                    android:textSize="1dip" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="#80000000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:text="天气"
+                    android:textColor="#ffffff"
+                    android:textSize="20dip" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/taday_weather"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:shadowColor="#80000000"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        android:text="气温"
+                        android:textColor="#ffffff"
+                        android:textSize="20dip" />
+
+                    <ImageView
+                        android:id="@+id/img_taday_weather"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-10dip"
+                        android:layout_marginTop="-5dip"
+                        android:src="@drawable/wi0" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/real_time_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:shadowColor="#90000000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:text="实时"
+                    android:textColor="#ffffff"
+                    android:textSize="100dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="7"
+                    android:orientation="vertical" >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                    <TextView
+                     android:id="@+id/old"
+                     android:layout_width="match_parent"
+                     android:layout_height="107dp"
+                     android:layout_marginTop="20dp"
+                     android:layout_weight="4"
+                     android:background="#20ffffff"
+                     android:textSize="20dp"
+                     android:gravity="center" />
+
+               <ImageView
+                     android:id="@+id/img_taday_weather1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:src="@drawable/wi0"
+                     android:layout_marginTop="50dip"
+                     android:layout_marginLeft="-5dip"
+                     
+                     />
+               
+               </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        
+                        android:layout_width="match_parent"
+                        android:layout_height="25dip"
+                        android:layout_marginTop="20dip"
+                        android:layout_weight="2"
+                        android:background="#20ffffff"
+                        android:gravity="center_vertical"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        android:text="闲置"
+                        android:textColor="#ffffff"
+                        android:textSize="15dip" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dip"
+                        android:background="@drawable/dotted_line" />
+
+                    <TextView
+                        android:id="@+id/visibility"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dip"
+                        android:layout_weight="2"
+                        android:background="#20ffffff"
+                        android:gravity="center_vertical"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        android:text="shidu"
+                        android:textColor="#ffffff"
+                        android:textSize="15dip" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dip"
+                        android:background="@drawable/dotted_line" />
+
+                    <TextView
+                        android:id="@+id/morning"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dip"
+                        android:layout_weight="2"
+                        android:background="#20ffffff"
+                        android:gravity="center_vertical"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        android:text="kejiandu"
+                        android:textColor="#ffffff"
+                        android:textSize="15dip" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dip"
+                        android:background="@drawable/dotted_line" />
+
+                    <TextView
+                        android:id="@+id/afternoon"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dip"
+                        android:layout_weight="2"
+                        android:background="#20ffffff"
+                        android:gravity="center_vertical"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        android:text="gailv"
+                        android:textColor="#ffffff"
+                        android:textSize="15dip" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dip"
+                        android:layout_marginTop="20dip"
+                        android:layout_weight="4"
+                        android:background="#20ffffff"
+                        android:gravity="center"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        android:textColor="#ffffff"
+                        android:text="风向和风速"
+                        android:textSize="15dip" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dip"
+                        android:background="@drawable/dotted_line" />
+
+                    <ImageView
+                        
+                        android:layout_width="match_parent"
+                        android:layout_height="100dip"
+                        android:layout_weight="2"
+                        android:background="#20ffffff"
+                        android:gravity="center"
+                        
+                         />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/direction_speed"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dip"
+                    android:layout_marginTop="20dip"
+                    android:layout_weight="2"
+                    android:background="#20ffffff"
+                    android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        android:textColor="#ffffff"
+                    android:gravity="center_vertical|left"
+                    android:text="风速"
+                    android:textSize="15dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dip" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:orientation="horizontal"
+                    android:background="#20ffffff" >
+
+                    <ImageButton
+                        android:id="@+id/img_sun_up"
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dip"
+                        android:layout_marginTop="20dip"
+                        android:layout_weight="2"
+                        android:background="#00BFCFFE"
+                        android:paddingLeft="10dip"
+                        android:paddingTop="20dip" />
+
+                    <ImageButton
+                        android:id="@+id/img_sun_set"
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dip"
+                        android:layout_marginTop="20dip"
+                        android:layout_weight="2"
+                        android:background="#00BFCFFE"
+                        android:paddingRight="10dip"
+                        android:paddingTop="20dip" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/sun_up"
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dip"
+                    android:layout_weight="2"
+                    android:background="#20ffffff"
+                    android:gravity="left|bottom"
+                    android:paddingLeft="5dip"
+                    android:text="1"
+                    android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        android:textColor="#ffffff"
+                    android:textSize="16dip" />
+
+                <TextView
+                    android:id="@+id/sun_set"
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dip"
+                    android:layout_weight="2"
+                    android:background="#20ffffff"
+                    android:gravity="right|bottom"
+                    android:paddingLeft="5dip"
+                    android:text="1"
+                    android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        android:textColor="#ffffff"
+                    android:textSize="16dip" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ynd"
+                android:layout_width="match_parent"
+                android:layout_height="20dip"
+                android:background="#20ffffff"
+                android:gravity="center_horizontal|bottom"
+                android:text="y"
+                android:textSize="16dip" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -40,7 +40,7 @@
                     android:layout_height="match_parent"
                     android:background="#00000000"
                     android:text=""
-                    android:textSize="1dip" />
+                    android:textSize="280dip" />
 
                 <TextView
                     android:layout_width="wrap_content"

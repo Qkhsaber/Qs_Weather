@@ -41,6 +41,7 @@
         </activity>
         <activity android:name="qkh.saber.newface.F_fragment" >
         </activity>
+        <activity android:name="qkh.saber.weather_setting.Setting_weather"></activity>
 
         <receiver android:name="qkh.saber.service.Update_Weather" >
             <intent-filter>

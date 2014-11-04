@@ -168,7 +168,7 @@ public class SlidingMenuNestTabActivity extends AbActivity {
 		
 		@Override
 		public void onClick(View v) {
-			Toast.makeText(SlidingMenuNestTabActivity.this, "还是要点？",Toast.LENGTH_LONG).show();
+			Toast.makeText(SlidingMenuNestTabActivity.this,str_city_name,Toast.LENGTH_LONG).show();
 			real_time_temperature.setText(str_real_time_temperature);
 
 		

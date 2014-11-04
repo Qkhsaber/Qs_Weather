@@ -22,7 +22,6 @@ import android.view.KeyEvent;
 import android.widget.TextView;
 
 public class Login extends Activity {
-	private static final long SPLASH_DELAY_MILLIS = 1 * 100;
 	String str_city_code = "null";// 城市代码
 	String str_city_name = "null";// 城市名称
 

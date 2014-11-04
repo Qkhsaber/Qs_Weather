@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import qkh.saber.weather_setting.Setting_weather;
 import saber.qkh.newweather.R;
 import android.app.Activity;
 import android.content.Intent;
@@ -28,6 +30,50 @@ import com.ab.view.pullview.AbPullListView;
  * 
  */
 public class Fragment1 extends Fragment {
+	String str_city_code = "null";// 城市代码
+	String str_city_name = "null";// 城市名称
+
+	String str_1_min_temperature = "null";// 四天的的最高最低天气
+	String str_1_max_temperature = "null";
+	String str_2_min_temperature = "null";
+	String str_2_max_temperature = "null";
+	String str_3_min_temperature = "null";
+	String str_3_max_temperature = "null";
+	String str_4_min_temperature = "null";
+	String str_4_max_temperature = "null";
+
+	String str_1_temperature = "null";// 结合的天气
+	String str_2_temperature = "null";
+	String str_3_temperature = "null";
+	String str_4_temperature = "null";
+
+	String str_real_time_temperature = "null";// 实时温度
+
+	String str_taday_weather = "null";// 当天的天气状况
+
+	String str_1_weather = "null";// 后四天的天气状况
+	String str_2_weather = "null";
+	String str_3_weather = "null";
+	String str_4_weather = "null";
+
+	String str_taday_weather_name = "null";// 当天的天气状况（中文）
+
+	String str_visibility = "null";// 当天的能见度
+
+	String str_mor_rianprobability = "null";// 当天早上的下雨几率
+	String str_aft_rianprobability = "null";// 当天下午的下雨几率
+	String str_mor_humidness = "null";// 当天早上的湿度
+	String str_aft_humidness = "null";// 当天晚上的湿度
+	String str_wind_speed = "null";// 实时风速
+	String str_wind_direction = "null";// 实时风向
+
+	String str_sun_up = "null";// 当天的日出时间
+	String str_sun_set = "null";// 当天的日落时间
+	String str_uptada_time = "null";// 更新天氣時間
+
+	static final int SLEEP_TIME = 3 * 1000;
+
+	private static final String PREFS_NAME = "weather_info";
 
 	private Activity mActivity = null;
 	private List<Map<String, Object>> list = null;
@@ -67,8 +113,12 @@ public class Fragment1 extends Fragment {
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
 				// 增加天气选择
-				Intent intent = new Intent(mActivity,F_fragment.class);
+				if(id==0){
+				Intent intent = new Intent(mActivity,Setting_weather.class);
 				startActivity(intent);
+				}else{
+					
+				}
 
 			}
 		});
@@ -81,6 +131,7 @@ public class Fragment1 extends Fragment {
 	@Override
 	public void onStart() {
 		super.onStart();
+		
 		// 定义两种查询的事�?
 		final AbTaskItem item1 = new AbTaskItem();
 		item1.listener = new AbTaskListener() {

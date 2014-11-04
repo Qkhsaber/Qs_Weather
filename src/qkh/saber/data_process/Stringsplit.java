@@ -34,6 +34,16 @@ public class Stringsplit
         String a[] = target.split("/");
 		return a[num];
     }
+    public String cut_updatetime(String target){
+    	for (int i = 0; i < target.length(); i++) {
+			if(target.charAt(i)=='M'){
+				target=target.substring(9,
+						i+1);
+			}
+
+		}
+    	return target;
+    }
    
     public String name(String result) {
 		String title = "";
@@ -201,6 +211,19 @@ public class Stringsplit
 			title[i] = link.text();
 			i++;
 		}
+		return title;
+	}
+   public String[] up_data_time(String result) {
+		String title[] = new String[200];
+		Document doc = Jsoup.parse(result);
+		Elements links = doc.select("lsup");
+		int i= 0;
+		for (Element link : links) {
+			 
+			title[i] = link.text();
+			i++;
+		}
+		
 		return title;
 	}
    

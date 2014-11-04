@@ -69,14 +69,14 @@
                         android:shadowRadius="1"
                         android:text="气温"
                         android:textColor="#ffffff"
-                        android:textSize="20dip" />
+                        android:textSize="25dip" />
 
                     <ImageView
                         android:id="@+id/img_taday_weather"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="-10dip"
-                        android:layout_marginTop="-5dip"
+                        
                         android:src="@drawable/wi0" />
                 </LinearLayout>
 
@@ -344,7 +344,7 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/ynd"
+                android:id="@+id/updata_time"
                 android:layout_width="match_parent"
                 android:layout_height="20dip"
                 android:background="#20ffffff"
